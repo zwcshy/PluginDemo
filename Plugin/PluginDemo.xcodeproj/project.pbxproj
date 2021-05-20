@@ -16,14 +16,14 @@
 		CE10578E2383DC16003C8862 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE10578D2383DC16003C8862 /* main.m */; };
 		CE1057982383DC16003C8862 /* PluginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1057972383DC16003C8862 /* PluginDemoTests.m */; };
 		CE1057A32383DC17003C8862 /* PluginDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1057A22383DC17003C8862 /* PluginDemoUITests.m */; };
-		CE3BBD5A23865E8900EF50DA /* YCPlayerPluginConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD4F23865E8900EF50DA /* YCPlayerPluginConfig.m */; };
-		CE3BBD5B23865E8900EF50DA /* YCPlayerDownloadPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5123865E8900EF50DA /* YCPlayerDownloadPlugin.m */; };
-		CE3BBD5C23865E8900EF50DA /* YCPlayerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5223865E8900EF50DA /* YCPlayerBuilder.m */; };
-		CE3BBD5D23865E8900EF50DA /* YCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5423865E8900EF50DA /* YCPlayer.m */; };
-		CE3BBD5E23865E8900EF50DA /* YCPlayerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5623865E8900EF50DA /* YCPlayerPlugin.m */; };
-		CE3BBD5F23865E8900EF50DA /* YCPlayerSharePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5823865E8900EF50DA /* YCPlayerSharePlugin.m */; };
-		CEB8E22B265612DC00183592 /* YCPlayerDownloadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8E22A265612DC00183592 /* YCPlayerDownloadConfig.m */; };
-		CEB8E2472656333000183592 /* YCPlayerShareConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8E2462656333000183592 /* YCPlayerShareConfig.m */; };
+		CE3BBD5A23865E8900EF50DA /* CCPlayerPluginConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD4F23865E8900EF50DA /* CCPlayerPluginConfig.m */; };
+		CE3BBD5B23865E8900EF50DA /* CCPlayerDownloadPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5123865E8900EF50DA /* CCPlayerDownloadPlugin.m */; };
+		CE3BBD5C23865E8900EF50DA /* CCPlayerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5223865E8900EF50DA /* CCPlayerBuilder.m */; };
+		CE3BBD5D23865E8900EF50DA /* CCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5423865E8900EF50DA /* CCPlayer.m */; };
+		CE3BBD5E23865E8900EF50DA /* CCPlayerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5623865E8900EF50DA /* CCPlayerPlugin.m */; };
+		CE3BBD5F23865E8900EF50DA /* CCPlayerSharePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BBD5823865E8900EF50DA /* CCPlayerSharePlugin.m */; };
+		CEB8E22B265612DC00183592 /* CCPlayerDownloadConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8E22A265612DC00183592 /* CCPlayerDownloadConfig.m */; };
+		CEB8E2472656333000183592 /* CCPlayerShareConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8E2462656333000183592 /* CCPlayerShareConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,22 +64,22 @@
 		CE10579E2383DC17003C8862 /* PluginDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PluginDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1057A22383DC17003C8862 /* PluginDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluginDemoUITests.m; sourceTree = "<group>"; };
 		CE1057A42383DC17003C8862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE3BBD4E23865E8900EF50DA /* YCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayer.h; sourceTree = "<group>"; };
-		CE3BBD4F23865E8900EF50DA /* YCPlayerPluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayerPluginConfig.m; sourceTree = "<group>"; };
-		CE3BBD5023865E8900EF50DA /* YCPlayerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayerPlugin.h; sourceTree = "<group>"; };
-		CE3BBD5123865E8900EF50DA /* YCPlayerDownloadPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayerDownloadPlugin.m; sourceTree = "<group>"; };
-		CE3BBD5223865E8900EF50DA /* YCPlayerBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayerBuilder.m; sourceTree = "<group>"; };
-		CE3BBD5323865E8900EF50DA /* YCPlayerSharePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayerSharePlugin.h; sourceTree = "<group>"; };
-		CE3BBD5423865E8900EF50DA /* YCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayer.m; sourceTree = "<group>"; };
-		CE3BBD5523865E8900EF50DA /* YCPlayerDownloadPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayerDownloadPlugin.h; sourceTree = "<group>"; };
-		CE3BBD5623865E8900EF50DA /* YCPlayerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayerPlugin.m; sourceTree = "<group>"; };
-		CE3BBD5723865E8900EF50DA /* YCPlayerPluginConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayerPluginConfig.h; sourceTree = "<group>"; };
-		CE3BBD5823865E8900EF50DA /* YCPlayerSharePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPlayerSharePlugin.m; sourceTree = "<group>"; };
-		CE3BBD5923865E8900EF50DA /* YCPlayerBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPlayerBuilder.h; sourceTree = "<group>"; };
-		CEB8E229265612DC00183592 /* YCPlayerDownloadConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCPlayerDownloadConfig.h; sourceTree = "<group>"; };
-		CEB8E22A265612DC00183592 /* YCPlayerDownloadConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCPlayerDownloadConfig.m; sourceTree = "<group>"; };
-		CEB8E2452656333000183592 /* YCPlayerShareConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCPlayerShareConfig.h; sourceTree = "<group>"; };
-		CEB8E2462656333000183592 /* YCPlayerShareConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCPlayerShareConfig.m; sourceTree = "<group>"; };
+		CE3BBD4E23865E8900EF50DA /* CCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayer.h; sourceTree = "<group>"; };
+		CE3BBD4F23865E8900EF50DA /* CCPlayerPluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerPluginConfig.m; sourceTree = "<group>"; };
+		CE3BBD5023865E8900EF50DA /* CCPlayerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerPlugin.h; sourceTree = "<group>"; };
+		CE3BBD5123865E8900EF50DA /* CCPlayerDownloadPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerDownloadPlugin.m; sourceTree = "<group>"; };
+		CE3BBD5223865E8900EF50DA /* CCPlayerBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerBuilder.m; sourceTree = "<group>"; };
+		CE3BBD5323865E8900EF50DA /* CCPlayerSharePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerSharePlugin.h; sourceTree = "<group>"; };
+		CE3BBD5423865E8900EF50DA /* CCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayer.m; sourceTree = "<group>"; };
+		CE3BBD5523865E8900EF50DA /* CCPlayerDownloadPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerDownloadPlugin.h; sourceTree = "<group>"; };
+		CE3BBD5623865E8900EF50DA /* CCPlayerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerPlugin.m; sourceTree = "<group>"; };
+		CE3BBD5723865E8900EF50DA /* CCPlayerPluginConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerPluginConfig.h; sourceTree = "<group>"; };
+		CE3BBD5823865E8900EF50DA /* CCPlayerSharePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPlayerSharePlugin.m; sourceTree = "<group>"; };
+		CE3BBD5923865E8900EF50DA /* CCPlayerBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlayerBuilder.h; sourceTree = "<group>"; };
+		CEB8E229265612DC00183592 /* CCPlayerDownloadConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPlayerDownloadConfig.h; sourceTree = "<group>"; };
+		CEB8E22A265612DC00183592 /* CCPlayerDownloadConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPlayerDownloadConfig.m; sourceTree = "<group>"; };
+		CEB8E2452656333000183592 /* CCPlayerShareConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPlayerShareConfig.h; sourceTree = "<group>"; };
+		CEB8E2462656333000183592 /* CCPlayerShareConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPlayerShareConfig.m; sourceTree = "<group>"; };
 		F0595EF9CC94A426332B4655 /* Pods-PluginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PluginDemo.debug.xcconfig"; path = "Target Support Files/Pods-PluginDemo/Pods-PluginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,22 +189,22 @@
 		CE3BBD4D23865E8900EF50DA /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				CE3BBD4E23865E8900EF50DA /* YCPlayer.h */,
-				CE3BBD5423865E8900EF50DA /* YCPlayer.m */,
-				CE3BBD5923865E8900EF50DA /* YCPlayerBuilder.h */,
-				CE3BBD5223865E8900EF50DA /* YCPlayerBuilder.m */,
-				CE3BBD5723865E8900EF50DA /* YCPlayerPluginConfig.h */,
-				CE3BBD4F23865E8900EF50DA /* YCPlayerPluginConfig.m */,
-				CE3BBD5023865E8900EF50DA /* YCPlayerPlugin.h */,
-				CE3BBD5623865E8900EF50DA /* YCPlayerPlugin.m */,
-				CE3BBD5323865E8900EF50DA /* YCPlayerSharePlugin.h */,
-				CE3BBD5823865E8900EF50DA /* YCPlayerSharePlugin.m */,
-				CEB8E2452656333000183592 /* YCPlayerShareConfig.h */,
-				CEB8E2462656333000183592 /* YCPlayerShareConfig.m */,
-				CE3BBD5523865E8900EF50DA /* YCPlayerDownloadPlugin.h */,
-				CE3BBD5123865E8900EF50DA /* YCPlayerDownloadPlugin.m */,
-				CEB8E229265612DC00183592 /* YCPlayerDownloadConfig.h */,
-				CEB8E22A265612DC00183592 /* YCPlayerDownloadConfig.m */,
+				CE3BBD4E23865E8900EF50DA /* CCPlayer.h */,
+				CE3BBD5423865E8900EF50DA /* CCPlayer.m */,
+				CE3BBD5923865E8900EF50DA /* CCPlayerBuilder.h */,
+				CE3BBD5223865E8900EF50DA /* CCPlayerBuilder.m */,
+				CE3BBD5723865E8900EF50DA /* CCPlayerPluginConfig.h */,
+				CE3BBD4F23865E8900EF50DA /* CCPlayerPluginConfig.m */,
+				CE3BBD5023865E8900EF50DA /* CCPlayerPlugin.h */,
+				CE3BBD5623865E8900EF50DA /* CCPlayerPlugin.m */,
+				CE3BBD5323865E8900EF50DA /* CCPlayerSharePlugin.h */,
+				CE3BBD5823865E8900EF50DA /* CCPlayerSharePlugin.m */,
+				CEB8E2452656333000183592 /* CCPlayerShareConfig.h */,
+				CEB8E2462656333000183592 /* CCPlayerShareConfig.m */,
+				CE3BBD5523865E8900EF50DA /* CCPlayerDownloadPlugin.h */,
+				CE3BBD5123865E8900EF50DA /* CCPlayerDownloadPlugin.m */,
+				CEB8E229265612DC00183592 /* CCPlayerDownloadConfig.h */,
+				CEB8E22A265612DC00183592 /* CCPlayerDownloadConfig.m */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -387,17 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3BBD5B23865E8900EF50DA /* YCPlayerDownloadPlugin.m in Sources */,
-				CE3BBD5D23865E8900EF50DA /* YCPlayer.m in Sources */,
+				CE3BBD5B23865E8900EF50DA /* CCPlayerDownloadPlugin.m in Sources */,
+				CE3BBD5D23865E8900EF50DA /* CCPlayer.m in Sources */,
 				CE1057832383DC15003C8862 /* ViewController.m in Sources */,
-				CE3BBD5F23865E8900EF50DA /* YCPlayerSharePlugin.m in Sources */,
+				CE3BBD5F23865E8900EF50DA /* CCPlayerSharePlugin.m in Sources */,
 				CE10577D2383DC15003C8862 /* AppDelegate.m in Sources */,
-				CEB8E2472656333000183592 /* YCPlayerShareConfig.m in Sources */,
-				CE3BBD5C23865E8900EF50DA /* YCPlayerBuilder.m in Sources */,
-				CEB8E22B265612DC00183592 /* YCPlayerDownloadConfig.m in Sources */,
+				CEB8E2472656333000183592 /* CCPlayerShareConfig.m in Sources */,
+				CE3BBD5C23865E8900EF50DA /* CCPlayerBuilder.m in Sources */,
+				CEB8E22B265612DC00183592 /* CCPlayerDownloadConfig.m in Sources */,
 				CE10578E2383DC16003C8862 /* main.m in Sources */,
-				CE3BBD5A23865E8900EF50DA /* YCPlayerPluginConfig.m in Sources */,
-				CE3BBD5E23865E8900EF50DA /* YCPlayerPlugin.m in Sources */,
+				CE3BBD5A23865E8900EF50DA /* CCPlayerPluginConfig.m in Sources */,
+				CE3BBD5E23865E8900EF50DA /* CCPlayerPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

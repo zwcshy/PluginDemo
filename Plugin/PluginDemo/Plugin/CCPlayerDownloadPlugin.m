@@ -1,18 +1,18 @@
 //
-//  YCPlayerDownloadPlugin.m
+//  CCPlayerDownloadPlugin.m
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
-#import "YCPlayerDownloadPlugin.h"
+#import "CCPlayerDownloadPlugin.h"
 
-@interface YCPlayerDownloadPlugin ()
+@interface CCPlayerDownloadPlugin ()
 
 @end
 
-@implementation YCPlayerDownloadPlugin
+@implementation CCPlayerDownloadPlugin
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -38,7 +38,7 @@
     return self;
 }
 
-#pragma mark - YCPlayerPluginProtocol
+#pragma mark - CCPlayerPluginProtocol
 
 - (void)start {
     [super start];
@@ -55,12 +55,12 @@
     NSLog(@"下载销毁");
 }
 
-- (void)setupPluginListener:(id<YCPlayerPluginListenerDelegate>)pluginListener {
+- (void)setupPluginListener:(id<CCPlayerPluginListenerDelegate>)pluginListener {
     [super setupPluginListener:pluginListener];
 }
 
-- (YCPlayerPluginPriority)pluginPriority {
-    return YCPlayerPluginPriorityMiddle;
+- (CCPlayerPluginPriority)pluginPriority {
+    return CCPlayerPluginPriorityMiddle;
 }
 
 - (NSString *)getTag {

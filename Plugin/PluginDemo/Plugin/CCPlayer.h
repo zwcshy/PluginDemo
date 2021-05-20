@@ -1,24 +1,24 @@
 //
-//  YCPlayer.h
+//  CCPlayer.h
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "YCPlayerPlugin.h"
+#import "CCPlayerPlugin.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class YCPlayerBuilder;
-@interface YCPlayer : NSObject
+@class CCPlayerBuilder;
+@interface CCPlayer : NSObject
 
 /** 单例 */
 + (id)sharedInstance;
 
 /** 添加构造器 */
-- (void)addPlayerBuilder:(YCPlayerBuilder *)builder;
+- (void)addPlayerBuilder:(CCPlayerBuilder *)builder;
 
 /** 开启插件 */
 - (void)startPlugins;

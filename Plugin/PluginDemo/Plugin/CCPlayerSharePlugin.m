@@ -1,24 +1,24 @@
 //
-//  YCPlayerSharePlugin.m
+//  CCPlayerSharePlugin.m
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
-#import "YCPlayerSharePlugin.h"
-#import "YCPlayerPlugin.h"
+#import "CCPlayerSharePlugin.h"
+#import "CCPlayerPlugin.h"
 
-@interface YCPlayerSharePlugin ()
+@interface CCPlayerSharePlugin ()
 
 /** 分享平台 */
 @property (nonatomic, strong) NSArray *platform;
 
 @end
 
-@implementation YCPlayerSharePlugin
+@implementation CCPlayerSharePlugin
 
-#pragma mark - YCPlayerPluginProtocol
+#pragma mark - CCPlayerPluginProtocol
 
 - (void)start {
     [super start];
@@ -49,7 +49,7 @@
     NSLog(@"分享销毁");
 }
 
-- (void)setupPluginListener:(id<YCPlayerPluginListenerDelegate>)pluginListener {
+- (void)setupPluginListener:(id<CCPlayerPluginListenerDelegate>)pluginListener {
     [super setupPluginListener:pluginListener];
 }
 
@@ -57,8 +57,8 @@
     return @"sharePlugin";
 }
 
-- (YCPlayerPluginPriority)pluginPriority {
-    return YCPlayerPluginPriorityHigh;
+- (CCPlayerPluginPriority)pluginPriority {
+    return CCPlayerPluginPriorityHigh;
 }
 
 - (void)addPlatform:(NSArray *)platforms {

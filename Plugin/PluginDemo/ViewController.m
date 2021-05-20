@@ -2,17 +2,17 @@
 //  ViewController.m
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "YCPlayer.h"
-#import "YCPlayerBuilder.h"
-#import "YCPlayerSharePlugin.h"
-#import "YCPlayerDownloadPlugin.h"
+#import "CCPlayer.h"
+#import "CCPlayerBuilder.h"
+#import "CCPlayerSharePlugin.h"
+#import "CCPlayerDownloadPlugin.h"
 
-@interface ViewController ()<YCPlayerPluginListenerDelegate, YCPlayerSharePluginDelegate, YCPlayerDownloadPluginDelegate>
+@interface ViewController ()<CCPlayerPluginListenerDelegate, CCPlayerSharePluginDelegate, CCPlayerDownloadPluginDelegate>
 
 @end
 
@@ -25,18 +25,18 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     // 测试插件
-    YCPlayer *player = [YCPlayer sharedInstance];
-    YCPlayerBuilder *playerBuilder = [[YCPlayerBuilder alloc] init];
+    CCPlayer *player = [CCPlayer sharedInstance];
+    CCPlayerBuilder *playerBuilder = [[CCPlayerBuilder alloc] init];
     playerBuilder.pluginListener = self; // pluginListener 回调 plugin 的相关事件
         
-    YCPlayerSharePlugin *sharePlugin = [[YCPlayerSharePlugin alloc] init];
+    CCPlayerSharePlugin *sharePlugin = [[CCPlayerSharePlugin alloc] init];
     sharePlugin.delegate = self;
     [playerBuilder addPlugin:sharePlugin];
     
     // 配置下载插件
-    YCPlayerDownloadPlugin *downloadPlugin = [[YCPlayerDownloadPlugin alloc] init];
+    CCPlayerDownloadPlugin *downloadPlugin = [[CCPlayerDownloadPlugin alloc] init];
     
-    YCPlayerDownloadConfig *config = [[YCPlayerDownloadConfig alloc] init];
+    CCPlayerDownloadConfig *config = [[CCPlayerDownloadConfig alloc] init];
     config.videoUrl = @"http://www.baidu.com";
     config.saveFilePath = @"/usr/download/video";
     downloadPlugin.config = config;
@@ -59,28 +59,28 @@
     NSLog(@"是否包含分享插件----%@", @([playerBuilder isContainPlugin:sharePlugin]));
 }
 
-#pragma mark - YCPlayerPluginListenerDelegate
-- (void)onInit:(id<YCPlayerPluginProtocol>)plugin {
+#pragma mark - CCPlayerPluginListenerDelegate
+- (void)onInit:(id<CCPlayerPluginProtocol>)plugin {
     
 }
 
-- (void)onStart:(id<YCPlayerPluginProtocol>)plugin {
+- (void)onStart:(id<CCPlayerPluginProtocol>)plugin {
     NSLog(@"插件是啥%@", plugin);
 }
 
-- (void)onStop:(id<YCPlayerPluginProtocol>)plugin {
+- (void)onStop:(id<CCPlayerPluginProtocol>)plugin {
     
 }
 
-- (void)onDestroy:(id<YCPlayerPluginProtocol>)plugin {
+- (void)onDestroy:(id<CCPlayerPluginProtocol>)plugin {
     
 }
 
-- (void)onPriority:(id<YCPlayerPluginProtocol>)plugin {
+- (void)onPriority:(id<CCPlayerPluginProtocol>)plugin {
     
 }
 
-#pragma mark - YCPlayerSharePluginDelegate
+#pragma mark - CCPlayerSharePluginDelegate
 - (void)sharePlatform:(NSString *)platform {
     NSLog(@"分享平台---%@", platform);
 }
@@ -89,7 +89,7 @@
     NSLog(@"错误信息是---%@", error);
 }
 
-#pragma mark - YCPlayerDownloadPluginDelegate
+#pragma mark - CCPlayerDownloadPluginDelegate
 
 - (void)startDownLoadWithUrl:(NSString *)url {
     NSLog(@"开始下载--%@", url);

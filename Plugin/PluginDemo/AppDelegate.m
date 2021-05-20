@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
 #import "AppDelegate.h"

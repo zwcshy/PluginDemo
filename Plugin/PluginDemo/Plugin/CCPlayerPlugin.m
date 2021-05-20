@@ -1,24 +1,24 @@
 //
-//  YCPlayerPlugin.m
+//  CCPlayerPlugin.m
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
-#import "YCPlayerPlugin.h"
+#import "CCPlayerPlugin.h"
 
-@interface YCPlayerPlugin ()
+@interface CCPlayerPlugin ()
 
-@property (nonatomic, weak) id<YCPlayerPluginListenerDelegate> pluginListener;
+@property (nonatomic, weak) id<CCPlayerPluginListenerDelegate> pluginListener;
 
 @end
 
-@implementation YCPlayerPlugin
+@implementation CCPlayerPlugin
 
 @synthesize pluginConfig;
 
-- (void)setupPluginListener:(id<YCPlayerPluginListenerDelegate>)pluginListener {
+- (void)setupPluginListener:(id<CCPlayerPluginListenerDelegate>)pluginListener {
     _pluginListener = pluginListener;
 }
 
@@ -45,8 +45,8 @@
     return nil;
 }
 
-- (YCPlayerPluginPriority)pluginPriority {
-    return YCPlayerPluginPriorityLow;
+- (CCPlayerPluginPriority)pluginPriority {
+    return CCPlayerPluginPriorityLow;
 }
 
 @end

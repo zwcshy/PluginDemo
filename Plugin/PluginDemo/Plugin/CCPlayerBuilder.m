@@ -1,22 +1,22 @@
 //
-//  YCPlayerBuilder.m
+//  CCPlayerBuilder.m
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
-#import "YCPlayerBuilder.h"
-#import "YCPlayerPlugin.h"
+#import "CCPlayerBuilder.h"
+#import "CCPlayerPlugin.h"
 
-@interface YCPlayerBuilder ()
+@interface CCPlayerBuilder ()
 
 /** 这个集合会自动去重 */
 @property (nonatomic, strong) NSMutableSet *plugins;
 
 @end
 
-@implementation YCPlayerBuilder
+@implementation CCPlayerBuilder
 
 - (id)init {
     if (self = [super init]) {
@@ -34,10 +34,10 @@
     [self.plugins removeAllObjects];
 }
 
-- (YCPlayerPlugin *)getPluginWithTag:(NSString *)tag {
+- (CCPlayerPlugin *)getPluginWithTag:(NSString *)tag {
     NSMutableSet *plugins = self.plugins;
-    YCPlayerPlugin *retPlugin = nil;
-    for (YCPlayerPlugin *plugin in plugins) {
+    CCPlayerPlugin *retPlugin = nil;
+    for (CCPlayerPlugin *plugin in plugins) {
         if ([[plugin getTag] isEqualToString:tag]) {
             retPlugin = plugin;
             break;
@@ -49,19 +49,19 @@
     return retPlugin;
 }
 
-- (void)addPlugin:(YCPlayerPlugin *)plugin {
+- (void)addPlugin:(CCPlayerPlugin *)plugin {
     if (nil == plugin) {
         return;
     }
     [self.plugins addObject:plugin];
 }
 
-- (void)removePlugin:(YCPlayerPlugin *)plugin {
+- (void)removePlugin:(CCPlayerPlugin *)plugin {
     if (!plugin) {
         return;
     }
     
-    for (YCPlayerPlugin *plugin in self.plugins) {
+    for (CCPlayerPlugin *plugin in self.plugins) {
         if ([plugin isMemberOfClass:[plugin class]]) {
             [self.plugins removeObject:plugin];
             break;
@@ -71,7 +71,7 @@
 
 - (void)removePluginWithTag:(NSString *)tag {
     NSMutableSet *plugins = self.plugins;
-    for (YCPlayerPlugin *plugin in plugins) {
+    for (CCPlayerPlugin *plugin in plugins) {
         if ([[plugin getTag] isEqualToString:@""]) {
             [self.plugins removeObject:plugin];
             break;
@@ -79,8 +79,8 @@
     }
 }
 
-- (BOOL)isContainPlugin:(YCPlayerPlugin *)plugin {
-    for (YCPlayerPlugin *plugin in self.plugins) {
+- (BOOL)isContainPlugin:(CCPlayerPlugin *)plugin {
+    for (CCPlayerPlugin *plugin in self.plugins) {
         if ([plugin isMemberOfClass:[plugin class]]) {
             return YES;
         }

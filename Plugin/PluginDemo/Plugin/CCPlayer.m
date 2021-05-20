@@ -1,27 +1,27 @@
 //
-//  YCPlayer.m
+//  CCPlayer.m
 //  PluginDemo
 //
-//  Created by 周文超 on 2021/5/20.
-//  Copyright © 2021 zhouwenchao. All rights reserved.
+//  Created by zwcshy on 2021/5/20.
+//  Copyright © 2021 蘑菇头. All rights reserved.
 //
 
-#import "YCPlayer.h"
-#import "YCPlayerBuilder.h"
+#import "CCPlayer.h"
+#import "CCPlayerBuilder.h"
 
-@interface YCPlayer ()
+@interface CCPlayer ()
 
-@property (nonatomic, strong) YCPlayerBuilder *builder;
+@property (nonatomic, strong) CCPlayerBuilder *builder;
 
 @end
 
-@implementation YCPlayer
+@implementation CCPlayer
 
 + (id)sharedInstance {
-    static YCPlayer *_sharedInstance = nil;
+    static CCPlayer *_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [[YCPlayer alloc] init];
+        _sharedInstance = [[CCPlayer alloc] init];
     });
     return _sharedInstance;
 }
@@ -33,24 +33,24 @@
     return self;
 }
 
-- (void)addPlayerBuilder:(YCPlayerBuilder *)builder {
+- (void)addPlayerBuilder:(CCPlayerBuilder *)builder {
     self.builder = builder;
     NSMutableSet *buildPlugins = [builder getPlugins];
-    for (YCPlayerPlugin *plugin in buildPlugins) {
+    for (CCPlayerPlugin *plugin in buildPlugins) {
         [plugin setupPluginListener:[builder pluginListener]];
     }
 }
 
 - (void)startPlugins {
     NSMutableSet *plugins = [self.builder getPlugins];
-    for (YCPlayerPlugin *plugin in plugins) {
+    for (CCPlayerPlugin *plugin in plugins) {
         [plugin start];
     }
 }
 
 - (void)stopPlugins {
     NSMutableSet *plugins = [self.builder getPlugins];
-    for (YCPlayerPlugin *plugin in plugins) {
+    for (CCPlayerPlugin *plugin in plugins) {
         [plugin stop];
     }
 }
